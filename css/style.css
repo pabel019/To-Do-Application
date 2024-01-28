@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+header {
+	width: 100%;
+}
+header .container {
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #153677, #4e085f);
+	padding: 50px 25px;
+}
+header .container .to_do_app {
+	width: 400px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 24px 22px;
+}
+header .container .to_do_app img {
+	width: 30px;
+	height: 25px;
+	margin-left: 3px;
+}
+header .container .to_do_app h2 {
+	font-size: 22px;
+	display: flex;
+	align-items: center;
+}
+header .container .to_do_app .input_form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0px;
+}
+header .container .to_do_app .input_form input {
+	flex: 1;
+	border: 0;
+	outline: 0;
+	background-color: #d4bfbf;
+	padding: 10px 18px;
+	border-radius: 25px;
+	color: #605d5a;
+	z-index: 1;
+	font-weight: 500;
+}
+header .container .to_do_app .input_form .btn {
+	display: flex;
+	border: 0;
+	outline: 0;
+	background: none;
+	background-color: #ed9818;
+	padding: 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+header .container .to_do_app .task_lists {
+	width: 100%;
+}
+header .container .to_do_app ul {
+	list-style-type: none;
+	padding-left: 30px;
+	padding-top: 7px;
+	position: relative;
+}
+header .container .to_do_app .task_lists li {
+	margin-bottom: 13px;
+	font-size: 18px;
+}
+header .container .to_do_app .task_lists li span {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	line-height: 24px;
+	font-size: 35px;
+	right: 2px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.8s;
+}
+header .container .to_do_app .task_lists li span:hover {
+	background: #f08080;
+	cursor: pointer;
+}
+
+header .container .to_do_app .task_lists li::before {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/unchecked.png);
+	background-size: cover;
+	background-position: center;
+	left: -3px;
+}
+header .container .to_do_app .task_lists .checked {
+	text-decoration: line-through;
+	color: #555;
+}
+header .container .to_do_app .task_lists .checked::before {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/checked.png);
+	background-size: cover;
+	background-position: center;
+	left: -3px;
+}
